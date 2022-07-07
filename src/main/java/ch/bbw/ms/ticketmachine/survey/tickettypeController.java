@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.Objects;
+
 
 @Controller
 public class tickettypeController {
@@ -25,8 +27,15 @@ public class tickettypeController {
     @PostMapping("/tickettypeform")
     public String saveTicketType(@ModelAttribute Ticket ticket) {
         myTicket = ticket;
-        System.out.println(ticket);
-        return "ticketoptions";
+        if(Objects.equals(myTicket.getTicketType(), "Einzelfahrt")){
+            return "redirect:/ticketroute-Einzelfahrt";
+        }else if(Objects.equals(myTicket.getTicketType(), "HinUndZurueck")){
+            return "redirect:/ticketroute-HinUndZurueck";
+        }else if(Objects.equals(myTicket.getTicketType(), "ZonenTicket")){
+            return "redirect:/ticketroute-Zonen";
+        }else{
+            return "redirect:/ticketroute-GA";
+        }
     }
 
 }

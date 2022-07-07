@@ -13,7 +13,7 @@ import java.util.List;
 public class Ticket {
     private List<String> ticketTypes = new ArrayList<>(Arrays.asList(
             "Einzelfahrt",
-            "HinUndZürück",
+            "HinUndZurueck",
             "ZonenTicket",
             "GA"
     ));
