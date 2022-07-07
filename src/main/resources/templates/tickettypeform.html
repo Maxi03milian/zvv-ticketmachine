@@ -9,8 +9,8 @@
 <body>
     <h1>Ticket kaufen</h1>
     <h3>Bitte wählen sie eine Ticketart</h3>
-    <form action="#" th:action="@{/survey}"
-          th:object="${ticket}">
+    <form action="#" th:action="@{/tickettypeform}"
+          th:object="${ticket}" method="post">
         <input type="radio" name="tickettype" value="einweg"> Einweg<br>
         <input type="radio" name="tickettype" value="hinUndZurück"> Hin und zurück<br>
         <input type="radio" name="tickettype" value="tageskarte"> Tageskarte<br>
