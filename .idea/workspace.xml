@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="722e13bf-33f3-4ec2-97ad-758fc23c7df4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/ticketoptionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketoptions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tickettypeform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tickettypeform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/tickettypeform.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/tickettypeform.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,14 +21,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,7 +72,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="TicketmachineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -84,7 +93,9 @@
       <updated>1657179616285</updated>
       <workItem from="1657179617612" duration="3000" />
       <workItem from="1657179688089" duration="73000" />
-      <workItem from="1657179764507" duration="5623000" />
+      <workItem from="1657179764507" duration="5914000" />
+      <workItem from="1657186389737" duration="2481000" />
+      <workItem from="1657188909616" duration="5103000" />
     </task>
     <servers />
   </component>

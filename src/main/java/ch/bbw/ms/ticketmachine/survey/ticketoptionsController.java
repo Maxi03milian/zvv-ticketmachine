@@ -10,22 +10,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 
 @Controller
-public class tickettypeController {
+public class ticketoptionsController {
 
     @Autowired
     Ticket myTicket;
 
-    @GetMapping("/tickettypeform")
-    public String tickettypeform(Model model){
+    @GetMapping("/ticketoptions")
+    public String ticketOptionsform(Model model){
         model.addAttribute("ticket", myTicket);
-        model.addAttribute("tickettypes", myTicket.getTicketTypes());
-        return "tickettypeform";
-    }
-
-    @PostMapping("/tickettypeform")
-    public String saveTicketType(@ModelAttribute Ticket ticket) {
-        myTicket = ticket;
-        System.out.println(ticket);
         return "ticketoptions";
     }
 

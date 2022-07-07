@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../static/tickettypeform.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -11,9 +10,11 @@
     <h3>Bitte wählen sie eine Ticketart</h3>
     <form action="#" th:action="@{/tickettypeform}"
           th:object="${ticket}" method="post">
-        <input type="radio" name="tickettype" value="einweg"> Einweg<br>
-        <input type="radio" name="tickettype" value="hinUndZurück"> Hin und zurück<br>
-        <input type="radio" name="tickettype" value="tageskarte"> Tageskarte<br>
+        <div th:each="radioValue: ${tickettypes}">
+            <label>
+                <input type="radio" name="ticketType" th:text="${radioValue}" th:value="${radioValue}" />
+            </label>
+        </div>
         <input type="submit" value="Kaufen">
     </form>
 </body>
