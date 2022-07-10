@@ -38,4 +38,39 @@ public class tickettypeController {
         }
     }
 
+
+    //Ticket route Mappings
+
+    @GetMapping("/ticketroute-Einzelfahrt")
+    public String ticketRouteEiform(Model model){
+        model.addAttribute("ticket", myTicket);
+        return "ticketroute_Einzelfahrt";
+    }
+
+    @GetMapping("/ticketroute-HinUndZurueck")
+    public String ticketRouteHiform(Model model){
+        model.addAttribute("ticket", myTicket);
+        return "ticketroute_HinUndZurueck";
+    }
+
+    @GetMapping("/ticketroute-Zonen")
+    public String ticketRouteZoform(Model model){
+        model.addAttribute("ticket", myTicket);
+        return "ticketroute_Zonen";
+    }
+    @GetMapping("/ticketroute-GA")
+    public String ticketRouteGaform(Model model){
+        model.addAttribute("ticket", myTicket);
+        model.addAttribute("gaoptions", myTicket.getGAOptions());
+        return "ticketroute_GA";
+    }
+
+    @PostMapping("/ticketroute-GA")
+    public String saveTicketRouteGa(@ModelAttribute Ticket ticket) {
+        myTicket = ticket;
+        System.out.println(myTicket);
+        return "redirect:/index.html";
+
+    }
+
 }

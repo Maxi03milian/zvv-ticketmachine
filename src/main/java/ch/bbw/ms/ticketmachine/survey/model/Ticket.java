@@ -17,23 +17,41 @@ public class Ticket {
             "ZonenTicket",
             "GA"
     ));
+    private List<String> GAOptions = new ArrayList<>(Arrays.asList(
+            "Normal",
+            "Teenager",
+            "Child",
+            "Senior"
+    ));
     private String ticketType;
+    private String ticketRoute;
 
     public List<String> getTicketTypes() {
         return ticketTypes;
     }
+    public List<String> getGAOptions() {return GAOptions;}
 
     public String getTicketType() {
         return ticketType;
     }
 
+    public String getTicketRoute() {
+        return ticketRoute;
+    }
+
     public void setTicketType(String ticketType) {
         this.ticketType = ticketType;
+    }
+    public void setTicketRoute(String ticketRoute) {
+        this.ticketRoute = ticketRoute;
     }
 
     @Override
     public String toString() {
-        return "Ticket [ticketType=" + ticketType + "]";
+        return "Ticket{" +
+                ", ticketType='" + ticketType + '\'' +
+                ", ticketRoute='" + ticketRoute + '\'' +
+                '}';
     }
 
 }
