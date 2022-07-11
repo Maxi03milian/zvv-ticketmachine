@@ -10,9 +10,11 @@
 <br>
 <!--form with dropdown for gaoptions-->
 <form action="#" th:action="@{/ticketroute-GA}" th:object="${ticket}" method="post">
-    <select name="gaoption" th:object="${ticket}" >
-        <option th:each="gaoption: ${gaoptions}" th:value="${gaoption}">${gaoption}</option>
+
+    <select name="gaoption" th:object="${ticket}" th:field="*{ticketRoute}">
+        <option th:each="gaoption: ${gaoptions}" th:value="${gaoption}" th:text="${gaoption}"></option>
     </select>
+
     <input type="submit" value="Buy">
 
 </form>

@@ -26,6 +26,8 @@ public class Ticket {
     private String ticketType;
     private String ticketRoute;
 
+
+
     public List<String> getTicketTypes() {
         return ticketTypes;
     }

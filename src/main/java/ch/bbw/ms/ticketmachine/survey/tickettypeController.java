@@ -67,6 +67,7 @@ public class tickettypeController {
 
     @PostMapping("/ticketroute-GA")
     public String saveTicketRouteGa(@ModelAttribute Ticket ticket) {
+        ticket.setTicketType(myTicket.getTicketType());
         myTicket = ticket;
         System.out.println(myTicket);
         return "redirect:/index.html";

@@ -7,7 +7,6 @@
     <list default="true" id="722e13bf-33f3-4ec2-97ad-758fc23c7df4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/ticketrouteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/ticketrouteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_GA.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_GA.html" afterDir="false" />
     </list>
@@ -95,7 +94,8 @@
       <workItem from="1657186389737" duration="2481000" />
       <workItem from="1657188909616" duration="7764000" />
       <workItem from="1657262610567" duration="109000" />
-      <workItem from="1657466259172" duration="1915000" />
+      <workItem from="1657466259172" duration="2409000" />
+      <workItem from="1657566417136" duration="1363000" />
     </task>
     <servers />
   </component>
