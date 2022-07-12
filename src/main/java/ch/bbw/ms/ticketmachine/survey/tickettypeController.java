@@ -120,8 +120,16 @@ public class tickettypeController {
         ticket.setZonen(myTicket.getZonen());
         myTicket = ticket;
         System.out.println(myTicket);
-        return "redirect:/index.html";
+        return "redirect:/ticket-user";
     }
+
+    //Mapping for Ticket User
+    @GetMapping("/ticket-user")
+    public String ticketUserForm(Model model){
+        model.addAttribute("ticket", myTicket);
+        return "ticketuser";
+    }
+
 
 
 }

@@ -91,7 +91,7 @@ public class Ticket {
                 ", startStation='" + startStation + '\'' +
                 ", endStation='" + endStation + '\'' +
                 ", zonen='" + zonen + '\'' +
-                ", klassen='" + klasse + '\'' +
+                ", klasse='" + klasse + '\'' +
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +
                 ", timeSpan='" + timeSpan + '\'' +
