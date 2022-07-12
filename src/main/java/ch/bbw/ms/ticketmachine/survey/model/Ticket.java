@@ -43,6 +43,9 @@ public class Ticket {
     private String endStation;
     private String zonen;
     private String klasse;
+    private String date;
+    private String time;
+    private String timeSpan;
 
 
     //Get Lists
@@ -62,6 +65,9 @@ public class Ticket {
     public String getEndStation() {return endStation;}
     public String getZonen() {return zonen;}
     public String getKlasse() {return klasse;}
+    public String getDate() {return date;}
+    public String getTime() {return time;}
+    public String getTimeSpan() {return timeSpan;}
 
     //Set Properties
     public void setTicketType(String ticketType) {
@@ -72,6 +78,9 @@ public class Ticket {
     public void setEndStation(String endStation) {this.endStation = endStation;}
     public void setZonen(String zonen) {this.zonen = zonen;}
     public void setKlasse(String klasse) {this.klasse = klasse;}
+    public void setDate(String date) {this.date = date;}
+    public void setTime(String time) {this.time = time;}
+    public void setTimeSpan(String timeSpan) {this.timeSpan = timeSpan;}
 
 
     @Override
@@ -83,6 +92,9 @@ public class Ticket {
                 ", endStation='" + endStation + '\'' +
                 ", zonen='" + zonen + '\'' +
                 ", klassen='" + klasse + '\'' +
+                ", date='" + date + '\'' +
+                ", time='" + time + '\'' +
+                ", timeSpan='" + timeSpan + '\'' +
                 '}';
     }
 

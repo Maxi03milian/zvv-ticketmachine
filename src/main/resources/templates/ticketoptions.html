@@ -24,6 +24,24 @@
             <input type="radio" th:text="${radioValue}" th:value="${radioValue}" th:field="*{klasse}" />
         </label>
     </div>
+    <label for="date">Start Date: (Your Ticket is valid from this day forward)</label>
+    <input type="date" id="date" name="date" th:field="*{date}" />
+
+    <div th:if="${ticket.zonen}">
+        <p>Note: the type of your ticket requires a start time and a timespan</p>
+        <label for="time">Start Time:</label>
+        <input type="time" id="time" name="time" th:field="*{time}" />
+        <label for="timespan">Timespan:</label>
+        <input type="number" id="timespan" name="timespan" th:field="*{timeSpan}" min="1" max="365" step="1" /> days
+    </div>
+    <div th:if="${ticket.GAOption}">
+        <p>Note: the type of your ticket requires a start time and a timespan</p>
+        <label for="time2">Start Time:</label>
+        <input type="time" id="time2" name="time" th:field="*{time}" />
+        <label for="timespan2">Timespan:</label>
+        <input type="number" id="timespan2" name="timespan" th:field="*{timeSpan}" min="1" max="365" step="1"/> days
+    </div>
+
     <input type="submit" value="Kaufen">
 </form>
 
