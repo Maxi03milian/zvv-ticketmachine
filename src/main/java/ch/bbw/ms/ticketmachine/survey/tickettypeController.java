@@ -41,6 +41,7 @@ public class tickettypeController {
 
     //Ticket route Mappings
 
+    //Get and Post for Einzelfahrt Ticket
     @GetMapping("/ticketroute-Einzelfahrt")
     public String ticketRouteEiform(Model model){
         model.addAttribute("ticket", myTicket);
@@ -52,9 +53,10 @@ public class tickettypeController {
         ticket.setTicketType(myTicket.getTicketType());
         myTicket = ticket;
         System.out.println(myTicket);
-        return "redirect:/index.html";
+        return "redirect:/ticket-options";
     }
 
+    //Get and Post for HinUndZurueck Ticket
     @GetMapping("/ticketroute-HinUndZurueck")
     public String ticketRouteHiform(Model model){
         model.addAttribute("ticket", myTicket);
@@ -66,14 +68,18 @@ public class tickettypeController {
         ticket.setTicketType(myTicket.getTicketType());
         myTicket = ticket;
         System.out.println(myTicket);
-        return "redirect:/index.html";
+        return "redirect:/ticket-options";
     }
 
+
+    //Get and Post for Zonen Ticket
     @GetMapping("/ticketroute-Zonen")
     public String ticketRouteZoform(Model model){
         model.addAttribute("ticket", myTicket);
         return "ticketroute_Zonen";
     }
+
+    //Get and Post for GA Ticket
     @GetMapping("/ticketroute-GA")
     public String ticketRouteGaform(Model model){
         model.addAttribute("ticket", myTicket);
@@ -86,8 +92,15 @@ public class tickettypeController {
         ticket.setTicketType(myTicket.getTicketType());
         myTicket = ticket;
         System.out.println(myTicket);
-        return "redirect:/index.html";
+        return "redirect:/ticket-options";
 
+    }
+
+    //Mapping for Ticket Options
+    @GetMapping("/ticket-options")
+    public String ticketOptionsForm(Model model){
+        model.addAttribute("ticket", myTicket);
+        return "ticketoptions";
     }
 
 }

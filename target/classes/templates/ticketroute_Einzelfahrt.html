@@ -7,7 +7,8 @@
 
 </head>
 <body>
-<h1 th:text="'Please select options for your ' + ${ticket.ticketType} + ' ticket.'"></h1>
+<h1 th:text="'Start and Endpoint'"></h1>
+<h4 th:text="'Please select your start and end point for your ' + ${ticket.ticketType} + ' ticket.'"></h4>
 <form action="#" th:action="@{/ticketroute-Einzelfahrt}" th:object="${ticket}" method="post">
 
     <label for="tripStart">Bitte geben sie ihren Startort ein</label>
