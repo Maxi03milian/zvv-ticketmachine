@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1 th:text="'GA Type'"></h1>
-<h4 th:text="'Please select your GA Type for your ' + ${ticket.ticketType} + ' ticket.'"></h4>
+<h4 th:text="'Please select your preferred type of ' + ${ticket.ticketType} + ' ticket.'"></h4>
 <br>
 <!--form with dropdown for gaoptions-->
 <form action="#" th:action="@{/ticketroute-GA}" th:object="${ticket}" method="post">
