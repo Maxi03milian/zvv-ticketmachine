@@ -23,10 +23,26 @@ public class Ticket {
             "Child",
             "Senior"
     ));
+    private List<String> zonenOptions = new ArrayList<>(Arrays.asList(
+            "110",
+            "120",
+            "121",
+            "130",
+            "131",
+            "240",
+            "241"
+    ));
+    private List<String> klassenOptions = new ArrayList<>(Arrays.asList(
+            "1. Klasse",
+            "2. Klasse"
+    ));
+
     private String ticketType;
     private String GAOption;
     private String startStation;
     private String endStation;
+    private String zonen;
+    private String klasse;
 
 
     //Get Lists
@@ -34,6 +50,8 @@ public class Ticket {
         return ticketTypes;
     }
     public List<String> getGAOptions() {return GAOptions;}
+    public List<String> getZonenOptions() {return zonenOptions;}
+    public List<String> getKlassenOptions() {return klassenOptions;}
 
     //Get Properties
     public String getTicketType() {
@@ -42,6 +60,8 @@ public class Ticket {
     public String getGAOption() {return GAOption;}
     public String getStartStation() {return startStation;}
     public String getEndStation() {return endStation;}
+    public String getZonen() {return zonen;}
+    public String getKlasse() {return klasse;}
 
     //Set Properties
     public void setTicketType(String ticketType) {
@@ -50,6 +70,8 @@ public class Ticket {
     public void setGAOption(String GAOption) {this.GAOption = GAOption;}
     public void setStartStation(String startStation) {this.startStation = startStation;}
     public void setEndStation(String endStation) {this.endStation = endStation;}
+    public void setZonen(String zonen) {this.zonen = zonen;}
+    public void setKlasse(String klasse) {this.klasse = klasse;}
 
 
     @Override
@@ -59,6 +81,8 @@ public class Ticket {
                 ", GAOption='" + GAOption + '\'' +
                 ", startStation='" + startStation + '\'' +
                 ", endStation='" + endStation + '\'' +
+                ", zonen='" + zonen + '\'' +
+                ", klassen='" + klasse + '\'' +
                 '}';
     }
 

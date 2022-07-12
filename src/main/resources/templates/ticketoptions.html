@@ -8,5 +8,24 @@
 <body>
 <h1 th:text="'additional Ticket Options'"></h1>
 <h4 th:text="'Please select addition options for your ' + ${ticket.ticketType} + ' ticket.'"></h4>
+<!--List with all ticket properties-->
+<ul>
+    <li th:text="'Ticket Type: ' + ${ticket.ticketType}"></li>
+    <li th:text="'Ticket GA Option: ' + ${ticket.GAOption}"></li>
+    <li th:text="'Ticket Start Station: ' + ${ticket.startStation}"></li>
+    <li th:text="'Ticket End Station: ' + ${ticket.endStation}"></li>
+    <li th:text="'Ticket Zonen: ' + ${ticket.zonen}"></li>
+</ul>
+
+<form action="#" th:action="@{/ticket-options}"
+      th:object="${ticket}" method="post">
+    <div th:each="radioValue: ${klassenOptions}">
+        <label>
+            <input type="radio" th:text="${radioValue}" th:value="${radioValue}" th:field="*{klasse}" />
+        </label>
+    </div>
+    <input type="submit" value="Kaufen">
+</form>
+
 </body>
 </html>

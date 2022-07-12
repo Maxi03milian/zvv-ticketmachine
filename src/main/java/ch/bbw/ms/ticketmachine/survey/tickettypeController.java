@@ -76,7 +76,16 @@ public class tickettypeController {
     @GetMapping("/ticketroute-Zonen")
     public String ticketRouteZoform(Model model){
         model.addAttribute("ticket", myTicket);
+        model.addAttribute("zonenOptions", myTicket.getZonenOptions());
         return "ticketroute_Zonen";
+    }
+
+    @PostMapping("/ticketroute-Zonen")
+    public String saveTicketRouteZo(@ModelAttribute Ticket ticket) {
+        ticket.setTicketType(myTicket.getTicketType());
+        myTicket = ticket;
+        System.out.println(myTicket);
+        return "redirect:/ticket-options";
     }
 
     //Get and Post for GA Ticket
@@ -91,16 +100,28 @@ public class tickettypeController {
     public String saveTicketRouteGa(@ModelAttribute Ticket ticket) {
         ticket.setTicketType(myTicket.getTicketType());
         myTicket = ticket;
-        System.out.println(myTicket);
         return "redirect:/ticket-options";
-
     }
 
     //Mapping for Ticket Options
     @GetMapping("/ticket-options")
     public String ticketOptionsForm(Model model){
         model.addAttribute("ticket", myTicket);
+        model.addAttribute("klassenOptions", myTicket.getKlassenOptions());
         return "ticketoptions";
     }
+
+    @PostMapping("/ticket-options")
+    public String saveTicketOptions(@ModelAttribute Ticket ticket) {
+        ticket.setTicketType(myTicket.getTicketType());
+        ticket.setGAOption(myTicket.getGAOption());
+        ticket.setStartStation(myTicket.getStartStation());
+        ticket.setEndStation(myTicket.getEndStation());
+        ticket.setZonen(myTicket.getZonen());
+        myTicket = ticket;
+        System.out.println(myTicket);
+        return "redirect:/index.html";
+    }
+
 
 }

@@ -7,5 +7,14 @@
 </head>
 <body>
 <h1 th:text="'Please select options for your ' + ${ticket.ticketType} + ' ticket.'"></h1>
+<form action="#" th:action="@{/ticketroute-Zonen}"
+      th:object="${ticket}" method="post">
+    <div th:each="radioValue: ${zonenOptions}">
+        <label>
+            <input type="checkbox" th:text="${radioValue}" th:value="${radioValue}" th:field="*{zonen}" />
+        </label>
+    </div>
+    <input type="submit" value="Kaufen">
+</form>
 </body>
 </html>
