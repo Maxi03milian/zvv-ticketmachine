@@ -8,7 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Einzelfahrt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Einzelfahrt.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_GA.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_GA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_HinUndZurueck.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_HinUndZurueck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Zonen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Zonen.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +98,8 @@
       <workItem from="1657188909616" duration="7764000" />
       <workItem from="1657262610567" duration="109000" />
       <workItem from="1657466259172" duration="2409000" />
-      <workItem from="1657566417136" duration="1363000" />
+      <workItem from="1657566417136" duration="1383000" />
+      <workItem from="1657610876715" duration="2503000" />
     </task>
     <servers />
   </component>

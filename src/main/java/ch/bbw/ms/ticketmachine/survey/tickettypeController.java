@@ -47,10 +47,26 @@ public class tickettypeController {
         return "ticketroute_Einzelfahrt";
     }
 
+    @PostMapping("/ticketroute-Einzelfahrt")
+    public String saveTicketRouteEi(@ModelAttribute Ticket ticket) {
+        ticket.setTicketType(myTicket.getTicketType());
+        myTicket = ticket;
+        System.out.println(myTicket);
+        return "redirect:/index.html";
+    }
+
     @GetMapping("/ticketroute-HinUndZurueck")
     public String ticketRouteHiform(Model model){
         model.addAttribute("ticket", myTicket);
         return "ticketroute_HinUndZurueck";
+    }
+
+    @PostMapping("/ticketroute-HinUndZurueck")
+    public String saveTicketRouteHi(@ModelAttribute Ticket ticket) {
+        ticket.setTicketType(myTicket.getTicketType());
+        myTicket = ticket;
+        System.out.println(myTicket);
+        return "redirect:/index.html";
     }
 
     @GetMapping("/ticketroute-Zonen")

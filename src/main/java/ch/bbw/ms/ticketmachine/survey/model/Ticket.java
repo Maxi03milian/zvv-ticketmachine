@@ -24,35 +24,41 @@ public class Ticket {
             "Senior"
     ));
     private String ticketType;
-    private String ticketRoute;
+    private String GAOption;
+    private String startStation;
+    private String endStation;
 
 
-
+    //Get Lists
     public List<String> getTicketTypes() {
         return ticketTypes;
     }
     public List<String> getGAOptions() {return GAOptions;}
 
+    //Get Properties
     public String getTicketType() {
         return ticketType;
     }
+    public String getGAOption() {return GAOption;}
+    public String getStartStation() {return startStation;}
+    public String getEndStation() {return endStation;}
 
-    public String getTicketRoute() {
-        return ticketRoute;
-    }
-
+    //Set Properties
     public void setTicketType(String ticketType) {
         this.ticketType = ticketType;
     }
-    public void setTicketRoute(String ticketRoute) {
-        this.ticketRoute = ticketRoute;
-    }
+    public void setGAOption(String GAOption) {this.GAOption = GAOption;}
+    public void setStartStation(String startStation) {this.startStation = startStation;}
+    public void setEndStation(String endStation) {this.endStation = endStation;}
+
 
     @Override
     public String toString() {
         return "Ticket{" +
-                ", ticketType='" + ticketType + '\'' +
-                ", ticketRoute='" + ticketRoute + '\'' +
+                "ticketType='" + ticketType + '\'' +
+                ", GAOption='" + GAOption + '\'' +
+                ", startStation='" + startStation + '\'' +
+                ", endStation='" + endStation + '\'' +
                 '}';
     }
 
