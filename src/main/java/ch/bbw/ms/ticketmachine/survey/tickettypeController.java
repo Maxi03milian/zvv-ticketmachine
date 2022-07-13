@@ -1,6 +1,7 @@
 package ch.bbw.ms.ticketmachine.survey;
 
 import ch.bbw.ms.ticketmachine.survey.model.Ticket;
+import ch.bbw.ms.ticketmachine.survey.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +17,9 @@ public class tickettypeController {
 
     @Autowired
     Ticket myTicket;
+
+    @Autowired
+    User myUser;
 
     @GetMapping("/tickettypeform")
     public String tickettypeform(Model model){
@@ -119,7 +123,6 @@ public class tickettypeController {
         ticket.setEndStation(myTicket.getEndStation());
         ticket.setZonen(myTicket.getZonen());
         myTicket = ticket;
-        System.out.println(myTicket);
         return "redirect:/ticket-user";
     }
 
@@ -127,8 +130,28 @@ public class tickettypeController {
     @GetMapping("/ticket-user")
     public String ticketUserForm(Model model){
         model.addAttribute("ticket", myTicket);
+        model.addAttribute("user", myUser);
         return "ticketuser";
     }
+    @PostMapping("/ticket-user")
+    public String saveTicketUser(@ModelAttribute Ticket ticket, @ModelAttribute User user) {
+        ticket.setTicketType(myTicket.getTicketType());
+        ticket.setGAOption(myTicket.getGAOption());
+        ticket.setStartStation(myTicket.getStartStation());
+        ticket.setEndStation(myTicket.getEndStation());
+        ticket.setZonen(myTicket.getZonen());
+        ticket.setKlasse(myTicket.getKlasse());
+        ticket.setDate(myTicket.getDate());
+        ticket.setTime(myTicket.getTime());
+        ticket.setTimeSpan(myTicket.getTimeSpan());
+        myTicket = ticket;
+        myUser = user;
+
+        System.out.println(myTicket);
+        System.out.println(myUser);
+        return "redirect:/index.html";
+    }
+
 
 
 

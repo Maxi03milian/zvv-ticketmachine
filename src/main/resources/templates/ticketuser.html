@@ -19,8 +19,21 @@
     <li th:if="${ticket.klasse}" th:text="'Klasse: ' + ${ticket.klasse}"></li>
     <li th:if="${ticket.date}" th:text="'Date: ' + ${ticket.date}"></li>
     <li th:if="${ticket.time}" th:text="'Time: ' + ${ticket.time}"></li>
-    <li th:if="${ticket.timeSpan}" th:text="'Timespan: ' + ${ticket.timeSpan}"></li>
-</ul>
+    <li th:if="${ticket.timeSpan}" th:text="'Timespan: ' + ${ticket.timeSpan} + ' days'"></li>
+</ul><br><br>
+<form action="#" th:action="@{/ticket-user}" th:object="${user}" method="post">
+
+    <label for="tripStart">Firstname</label>
+    <input id="tripStart" type="text" th:field="*{firstname}" >
+    <br>
+    <label for="tripEnd">Name</label>
+    <input id="tripEnd" type="text" th:field="*{lastname}" >
+
+    <input type="submit" value="Buy">
+
+</form>
+
+
 
 </body>
 </html>

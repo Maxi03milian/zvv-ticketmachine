@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="722e13bf-33f3-4ec2-97ad-758fc23c7df4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketuser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketoptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketoptions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ticketoptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ticketoptions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ticketuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ticketuser.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,7 +100,8 @@
       <workItem from="1657466259172" duration="2409000" />
       <workItem from="1657566417136" duration="1383000" />
       <workItem from="1657610876715" duration="6277000" />
-      <workItem from="1657655444005" duration="3758000" />
+      <workItem from="1657655444005" duration="4125000" />
+      <workItem from="1657710159899" duration="598000" />
     </task>
     <servers />
   </component>
