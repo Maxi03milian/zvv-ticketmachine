@@ -3,6 +3,7 @@ package ch.bbw.ms.ticketmachine.survey.model;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
+import javax.validation.constraints.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,14 +38,23 @@ public class Ticket {
             "2. Klasse"
     ));
 
+    @NotEmpty
     private String ticketType;
+    @NotNull
     private String GAOption;
+    @NotEmpty @Min(3) @Max(20)
     private String startStation;
+    @NotEmpty @Min(3) @Max(20)
     private String endStation;
+    @NotNull
     private String zonen;
+    @NotNull
     private String klasse;
+    @NotNull
     private String date;
+    @NotNull
     private String time;
+    @NotNull
     private String timeSpan;
 
 

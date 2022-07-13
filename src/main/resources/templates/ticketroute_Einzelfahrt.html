@@ -13,9 +13,11 @@
 
     <label for="tripStart">Bitte geben sie ihren Startort ein</label>
     <input id="tripStart" type="text" th:field="*{startStation}" >
+    <b th:if="${#fields.hasErrors('startStation')}" th:errors="*{startStation}"/>
     <br>
     <label for="tripEnd">Bitte geben sie ihren Zielort ein</label>
     <input id="tripEnd" type="text" th:field="*{endStation}" >
+    <b th:if="${#fields.hasErrors('endStation')}" th:errors="*{endStation}"/>
 
     <input type="submit" value="Buy">
 

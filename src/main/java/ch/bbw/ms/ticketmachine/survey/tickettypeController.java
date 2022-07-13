@@ -5,10 +5,12 @@ import ch.bbw.ms.ticketmachine.survey.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.validation.Valid;
 import java.util.Objects;
 
 
@@ -29,7 +31,7 @@ public class tickettypeController {
     }
 
     @PostMapping("/tickettypeform")
-    public String saveTicketType(@ModelAttribute Ticket ticket) {
+    public String saveTicketType(@Valid @ModelAttribute Ticket ticket, BindingResult bindingResult) {
         myTicket = ticket;
         if(Objects.equals(myTicket.getTicketType(), "Einzelfahrt")){
             return "redirect:/ticketroute-Einzelfahrt";
@@ -53,7 +55,10 @@ public class tickettypeController {
     }
 
     @PostMapping("/ticketroute-Einzelfahrt")
-    public String saveTicketRouteEi(@ModelAttribute Ticket ticket) {
+    public String saveTicketRouteEi(@Valid @ModelAttribute Ticket ticket, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "redirect:/ticketroute-Einzelfahrt";
+        }
         ticket.setTicketType(myTicket.getTicketType());
         myTicket = ticket;
         System.out.println(myTicket);

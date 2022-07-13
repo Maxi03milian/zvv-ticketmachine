@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="722e13bf-33f3-4ec2-97ad-758fc23c7df4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zvv-ticketmachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zvv-ticketmachine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/bbw/ms/ticketmachine/survey/tickettypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Einzelfahrt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Einzelfahrt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tickettypeform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tickettypeform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ticketuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ticketuser.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +102,7 @@
       <workItem from="1657566417136" duration="1383000" />
       <workItem from="1657610876715" duration="6277000" />
       <workItem from="1657655444005" duration="4125000" />
-      <workItem from="1657710159899" duration="792000" />
+      <workItem from="1657710159899" duration="4094000" />
     </task>
     <servers />
   </component>

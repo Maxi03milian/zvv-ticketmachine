@@ -23,11 +23,11 @@
 </ul><br><br>
 <form action="#" th:action="@{/ticket-user}" th:object="${user}" method="post">
 
-    <label for="tripStart">Firstname</label>
-    <input id="tripStart" type="text" th:field="*{firstname}" >
+    <label for="firstname">Firstname</label>
+    <input id="firstname" type="text" th:field="*{firstname}" >
     <br>
-    <label for="tripEnd">Name</label>
-    <input id="tripEnd" type="text" th:field="*{lastname}" >
+    <label for="name">Name</label>
+    <input id="name" type="text" th:field="*{lastname}" >
 
     <input type="submit" value="Buy">
 

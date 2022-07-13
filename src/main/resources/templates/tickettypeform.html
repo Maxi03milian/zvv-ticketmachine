@@ -13,6 +13,7 @@
         <div th:each="radioValue: ${tickettypes}">
             <label>
                 <input type="radio" name="ticketType" th:text="${radioValue}" th:value="${radioValue}" />
+                <b th:if="${#fields.hasErrors('ticketType')}" th:errors="*{ticketType}"/>
             </label>
         </div>
         <input type="submit" value="Kaufen">
