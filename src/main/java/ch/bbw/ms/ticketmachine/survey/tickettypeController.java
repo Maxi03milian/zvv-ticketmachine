@@ -189,7 +189,16 @@ public class tickettypeController {
         System.out.println(myTicket);
         System.out.println(myUser);
         System.out.println(myNewsletter);
-        return "redirect:/index.html";
+        return "redirect:/ticket-overview";
+    }
+
+    //Mapping for Overview
+    @GetMapping("/ticket-overview")
+    public String ticketOverview(Model model){
+        model.addAttribute("ticket", myTicket);
+        model.addAttribute("user", myUser);
+        model.addAttribute("newsletter", myNewsletter);
+        return "ticketoverview";
     }
 
 
