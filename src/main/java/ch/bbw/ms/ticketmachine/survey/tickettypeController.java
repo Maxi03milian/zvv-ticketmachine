@@ -1,5 +1,6 @@
 package ch.bbw.ms.ticketmachine.survey;
 
+import ch.bbw.ms.ticketmachine.survey.model.Newsletter;
 import ch.bbw.ms.ticketmachine.survey.model.Ticket;
 import ch.bbw.ms.ticketmachine.survey.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,9 @@ public class tickettypeController {
 
     @Autowired
     User myUser;
+
+    @Autowired
+    Newsletter myNewsletter;
 
     @GetMapping("/tickettypeform")
     public String tickettypeform(Model model){
@@ -151,11 +155,43 @@ public class tickettypeController {
         ticket.setTimeSpan(myTicket.getTimeSpan());
         myTicket = ticket;
         myUser = user;
+        return "redirect:/ticket-newsletter";
+    }
 
+    //Mapping for User Newsletter
+    @GetMapping("/ticket-newsletter")
+    public String ticketNewsletterForm(Model model){
+        model.addAttribute("ticket", myTicket);
+        model.addAttribute("user", myUser);
+        model.addAttribute("newsletter", myNewsletter);
+        model.addAttribute("newsletterTypes", myNewsletter.getNewsletterTypes());
+        model.addAttribute("newsletterIntervals", myNewsletter.getNewsletterIntervals());
+        model.addAttribute("newsletterForms", myNewsletter.getNewsletterForms());
+        return "ticketnewsletter";
+    }
+
+    @PostMapping("/ticket-newsletter")
+    public String saveTicketNewsletter(@ModelAttribute Ticket ticket, @ModelAttribute User user, @ModelAttribute Newsletter newsletter) {
+        ticket.setTicketType(myTicket.getTicketType());
+        ticket.setGAOption(myTicket.getGAOption());
+        ticket.setStartStation(myTicket.getStartStation());
+        ticket.setEndStation(myTicket.getEndStation());
+        ticket.setZonen(myTicket.getZonen());
+        ticket.setKlasse(myTicket.getKlasse());
+        ticket.setDate(myTicket.getDate());
+        ticket.setTime(myTicket.getTime());
+        ticket.setTimeSpan(myTicket.getTimeSpan());
+        user.setFirstname(myUser.getFirstname());
+        user.setLastname(myUser.getLastname());
+        myTicket = ticket;
+        myUser = user;
+        myNewsletter = newsletter;
         System.out.println(myTicket);
         System.out.println(myUser);
+        System.out.println(myNewsletter);
         return "redirect:/index.html";
     }
+
 
 
 
