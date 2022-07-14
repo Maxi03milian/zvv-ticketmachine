@@ -30,6 +30,7 @@
     <div class="container">
         <form action="#" th:action="@{/ticketroute-Zonen}"
               th:object="${ticket}" method="post">
+            Please select Zones you want to travel to:
             <div th:each="radioValue: ${zonenOptions}">
                 <label>
                     <input type="checkbox" th:text="${radioValue}" th:value="${radioValue}" th:field="*{zonen}" />
