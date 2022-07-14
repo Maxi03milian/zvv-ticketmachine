@@ -22,10 +22,11 @@
             flex-direction: column;
         }
         .submitButton {
-            background-color: #4CAF50; /* Green */
+            background-color: #007bff; /* Green */
             border: none;
+            border-radius: 5px;
             color: white;
-            padding: 15px 32px;
+            padding: 15px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -68,7 +69,7 @@
         <label for="timespan2">Timespan:</label>
         <input type="number" id="timespan2" name="timespan" th:field="*{timeSpan}" min="1" max="365" step="1"/> days
     </div>
-
+    <br>
     <input type="submit" value="Continue" class="submitButton">
 </form>
 </div>

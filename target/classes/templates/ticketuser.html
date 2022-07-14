@@ -23,10 +23,11 @@
             flex-direction: column;
         }
         .submitButton {
-            background-color: #4CAF50; /* Green */
+            background-color: #007bff; /* Green */
             border: none;
+            border-radius: 5px;
             color: white;
-            padding: 15px 32px;
+            padding: 15px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -47,7 +48,7 @@
     <br>
     <label for="name">Name</label>
     <input id="name" type="text" th:field="*{lastname}" >
-
+    <br>
     <input type="submit" value="Continue" class="submitButton">
 
 </form>
