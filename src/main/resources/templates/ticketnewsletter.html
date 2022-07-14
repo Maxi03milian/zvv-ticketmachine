@@ -21,6 +21,10 @@
             text-align: center;
             flex-direction: column;
         }
+        .inputSection{
+            display: flex;
+            flex-direction: row;
+        }
     </style>
 </head>
 <body>
@@ -33,22 +37,26 @@
 <form action="#" th:action="@{/ticket-newsletter}" th:object="${newsletter}" method="post">
 
     Type:
-    <div th:each="radioValue: ${newsletterTypes}">
-        <label>
-            <input type="checkbox" th:text="${radioValue}" th:value="${radioValue}" th:field="*{type}" />
-        </label>
+    <div class="inputSection">
+        <div th:each="radioValue: ${newsletterTypes}">
+            <label>
+                <input type="checkbox" th:text="${radioValue}" th:value="${radioValue}" th:field="*{type}" />&nbsp;&nbsp;
+            </label>
+        </div>
     </div>
     Interval:
-    <div th:each="radioValue: ${newsletterIntervals}">
-        <label>
-            <input type="radio" th:text="${radioValue}" th:value="${radioValue}" th:field="*{interval}" />
-        </label>
+    <div class="inputSection">
+        <div th:each="radioValue: ${newsletterIntervals}">
+            <label>
+                <input type="radio" th:text="${radioValue}" th:value="${radioValue}" th:field="*{interval}" />&nbsp;&nbsp;
+            </label>
+        </div>
     </div>
     Form
     <select name="gaoption" th:object="${newsletter}" th:field="*{form}">
         <option th:each="option: ${newsletterForms}" th:value="${option}" th:text="${option}"></option>
     </select>
-    <br>
+    <br><br><br>
     <input type="submit" value="Buy">
 
 </form>
