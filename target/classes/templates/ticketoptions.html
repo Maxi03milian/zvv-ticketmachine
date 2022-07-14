@@ -31,6 +31,7 @@
 <div class="container">
 <form action="#" th:action="@{/ticket-options}"
       th:object="${ticket}" method="post">
+    Class:
     <div th:each="radioValue: ${klassenOptions}">
         <label>
             <input type="radio" th:text="${radioValue}" th:value="${radioValue}" th:field="*{klasse}" />
