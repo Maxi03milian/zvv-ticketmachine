@@ -22,7 +22,7 @@ public class Newsletter {
             "Wöchentlich",
             "Monatlich",
             "Alle 3 Monate",
-            "täglich"
+            "Täglich"
     ));
     private List<String> newsletterForms = new ArrayList<>(Arrays.asList(
             "Post",
