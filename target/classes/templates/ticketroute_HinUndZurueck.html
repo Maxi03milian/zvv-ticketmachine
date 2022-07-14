@@ -5,9 +5,16 @@
     <title>Ticket Route</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        body {
+        .title{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
             width: 100%;
-            height: 100vh;
+            height: 70vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,18 +25,22 @@
 
 </head>
 <body>
+<div class="title">
 <h1 th:text="'Start and Endpoint'"></h1>
 <h4 th:text="'Please select your start and end point for your ' + ${ticket.ticketType} + ' ticket.'"></h4>
-<form action="#" th:action="@{/ticketroute-HinUndZurueck}" th:object="${ticket}" method="post">
+</div>
+<div class="container">
+    <form action="#" th:action="@{/ticketroute-HinUndZurueck}" th:object="${ticket}" method="post">
 
-    <label for="tripStart">Bitte geben sie ihren Startort ein</label>
-    <input id="tripStart" type="text" th:field="*{startStation}" >
-    <br>
-    <label for="tripEnd">Bitte geben sie ihren Startort ein</label>
-    <input id="tripEnd" type="text" th:field="*{endStation}" >
+        <label for="tripStart">Bitte geben sie ihren Startort ein</label>
+        <input id="tripStart" type="text" th:field="*{startStation}" >
+        <br>
+        <label for="tripEnd">Bitte geben sie ihren Startort ein</label>
+        <input id="tripEnd" type="text" th:field="*{endStation}" >
 
-    <input type="submit" value="Buy">
+        <input type="submit" value="Buy">
 
-</form>
+    </form>
+</div>
 </body>
 </html>

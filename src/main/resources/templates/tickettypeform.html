@@ -5,9 +5,16 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        body {
+        .title{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
             width: 100%;
-            height: 100vh;
+            height: 70vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,17 +24,21 @@
     </style>
 </head>
 <body>
+<div class="title">
     <h1>Ticket kaufen</h1>
     <h3>Bitte wählen sie eine Ticketart</h3>
-    <form action="#" th:action="@{/tickettypeform}"
-          th:object="${ticket}" method="post">
-        <div th:each="radioValue: ${tickettypes}">
-            <label>
-                <input type="radio" name="ticketType" th:text="${radioValue}" th:value="${radioValue}" />
-                <b th:if="${#fields.hasErrors('ticketType')}" th:errors="*{ticketType}"/>
-            </label>
-        </div>
-        <input type="submit" value="Kaufen">
-    </form>
+</div>
+    <div class="container">
+        <form action="#" th:action="@{/tickettypeform}"
+              th:object="${ticket}" method="post">
+            <div th:each="radioValue: ${tickettypes}">
+                <label>
+                    <input type="radio" name="ticketType" th:text="${radioValue}" th:value="${radioValue}" />
+                    <b th:if="${#fields.hasErrors('ticketType')}" th:errors="*{ticketType}"/>
+                </label>
+            </div>
+            <input type="submit" value="Kaufen">
+        </form>
+    </div>
 </body>
 </html>
