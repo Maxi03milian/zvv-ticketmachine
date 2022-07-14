@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="722e13bf-33f3-4ec2-97ad-758fc23c7df4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketnewsletter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketnewsletter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketoptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketoptions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Einzelfahrt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Einzelfahrt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_GA.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_GA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_HinUndZurueck.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_HinUndZurueck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Zonen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketroute_Zonen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tickettypeform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tickettypeform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ticketuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ticketuser.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
