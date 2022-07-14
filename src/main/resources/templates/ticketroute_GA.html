@@ -44,8 +44,8 @@
         <select name="gaoption" th:object="${ticket}" th:field="*{GAOption}">
             <option th:each="gaoption: ${gaoptions}" th:value="${gaoption}" th:text="${gaoption}"></option>
         </select>
-
-        <input type="submit" value="Buy" class="submitButton">
+        <br>
+        <input type="submit" value="Continue" class="submitButton">
 
     </form>
 </div>

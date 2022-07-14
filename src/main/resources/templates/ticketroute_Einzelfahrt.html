@@ -49,8 +49,8 @@
         <label for="tripEnd">Bitte geben sie ihren Zielort ein</label>
         <input id="tripEnd" type="text" th:field="*{endStation}" >
         <b th:if="${#fields.hasErrors('endStation')}" th:errors="*{endStation}"/>
-
-        <input type="submit" value="Buy" class="submitButton">
+        <br>
+        <input type="submit" value="Continue" class="submitButton">
 
     </form>
 </div>
