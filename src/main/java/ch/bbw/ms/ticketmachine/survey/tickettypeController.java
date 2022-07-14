@@ -60,9 +60,6 @@ public class tickettypeController {
 
     @PostMapping("/ticketroute-Einzelfahrt")
     public String saveTicketRouteEi(@Valid @ModelAttribute Ticket ticket, BindingResult bindingResult) {
-        if (bindingResult.hasErrors()) {
-            return "redirect:/ticketroute-Einzelfahrt";
-        }
         ticket.setTicketType(myTicket.getTicketType());
         myTicket = ticket;
         System.out.println(myTicket);

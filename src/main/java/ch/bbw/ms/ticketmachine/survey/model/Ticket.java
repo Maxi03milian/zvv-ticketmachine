@@ -42,9 +42,9 @@ public class Ticket {
     private String ticketType;
     @NotNull
     private String GAOption;
-    @NotEmpty @Min(3) @Max(20)
+    @NotEmpty
     private String startStation;
-    @NotEmpty @Min(3) @Max(20)
+    @NotEmpty
     private String endStation;
     @NotNull
     private String zonen;

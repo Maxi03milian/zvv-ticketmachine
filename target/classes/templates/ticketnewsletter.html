@@ -26,41 +26,29 @@
 <body>
 <div class="title">
 <h1 th:text="'Choose Newsletter Options'"></h1>
-<h4 th:text="'Please choose a  ' + ${ticket.ticketType} + ' ticket.'"></h4>
+<h4 th:text="'Please choose a newsletter option for ' + ${user.firstname} + ' ' + ${user.lastname}"></h4>
 </div>
 <div class="container">
-<p>Your current Ticket:</p>
-<ul>
-    <li th:text="'Type: ' + ${ticket.ticketType}"></li>
-    <li th:if="${ticket.GAOption}" th:text="'GA Option: ' + ${ticket.GAOption}"></li>
-    <li th:if="${ticket.startStation}" th:text="'Start Station: ' + ${ticket.startStation}"></li>
-    <li th:if="${ticket.endStation}" th:text="'End Station: ' + ${ticket.endStation}"></li>
-    <li th:if="${ticket.zonen}" th:text="'Zonen: ' + ${ticket.zonen}"></li>
-    <li th:if="${ticket.klasse}" th:text="'Klasse: ' + ${ticket.klasse}"></li>
-    <li th:if="${ticket.date}" th:text="'Date: ' + ${ticket.date}"></li>
-    <li th:if="${ticket.time}" th:text="'Time: ' + ${ticket.time}"></li>
-    <li th:if="${ticket.timeSpan}" th:text="'Timespan: ' + ${ticket.timeSpan} + ' days'"></li>
-</ul>
-<p th:text="'This Ticket is for: ' + ${user.firstname} + ' ' + ${user.lastname}"></p>
 
-<br><br>
 <form action="#" th:action="@{/ticket-newsletter}" th:object="${newsletter}" method="post">
 
+    Type:
     <div th:each="radioValue: ${newsletterTypes}">
         <label>
             <input type="checkbox" th:text="${radioValue}" th:value="${radioValue}" th:field="*{type}" />
         </label>
     </div>
-    <br>
+    Interval:
     <div th:each="radioValue: ${newsletterIntervals}">
         <label>
             <input type="radio" th:text="${radioValue}" th:value="${radioValue}" th:field="*{interval}" />
         </label>
     </div>
-    <br>
+    Form
     <select name="gaoption" th:object="${newsletter}" th:field="*{form}">
         <option th:each="option: ${newsletterForms}" th:value="${option}" th:text="${option}"></option>
     </select>
+    <br>
     <input type="submit" value="Buy">
 
 </form>
